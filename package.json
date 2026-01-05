@@ -1,18 +1,18 @@
 {
-    "name": "voca-monorepo",
-    "private": true,
-    "workspaces": [
-        "packages/*",
-        "apps/*"
-    ],
-    "scripts": {
-        "build": "bun run --filter='*' build",
-        "dev": "bun run --filter='*' dev",
-        "lint": "bun run --filter='*' lint"
-    },
-    "author": "Trey Orr",
-    "license": "MIT",
-    "devDependencies": {
-        "typescript": "^5.9.3"
-    }
+  "name": "voca-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter='*' build",
+    "dev": "node api.js && bun run --filter='*' dev",
+    "lint": "bun run --filter='*' lint"
+  },
+  "author": "Trey Orr",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }

@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --format esm --sourcemap=external --minify && tsc --emitDeclarationOnly --outDir dist",
-    "dev": "bun build src/index.ts --outdir dist --format esm --watch",
+    "dev": "node api.js && bun build src/index.ts --outdir dist --format esm --watch",
     "lint": "tsc --noEmit",
     "test": "bun test",
     "test:watch": "bun test --watch"
